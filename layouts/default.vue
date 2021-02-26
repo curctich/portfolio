@@ -48,9 +48,28 @@ ul {
   list-style: none;
 }
 
-.main-area {
+.inner__main {
   width: 100%;
   max-width: 960px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+.section__area {
+  padding: 60px 0;
+}
+
+.title--primary {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  &::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin-top: 10px;
+    background-color: #212121;
+  }
 }
 </style>
