@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="main-area header__wrapper">
+    <div class="inner__main header__wrapper">
       <nav>
         <ul class="header__nav">
           <li class="header__nav_item">
