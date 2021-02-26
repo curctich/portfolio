@@ -13,6 +13,8 @@
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "fibers": "^5.0.0",
     "modern-css-reset": "^1.4.0",
     "sass": "^1.32.8",
     "sass-loader": "^10.1.1"
