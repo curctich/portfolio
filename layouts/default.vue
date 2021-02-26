@@ -12,7 +12,7 @@
 // }
 </script>
 
-<style>
+<style lang="scss">
 /*html {*/
 /*  font-family:*/
 /*    'Source Sans Pro',*/
@@ -31,40 +31,25 @@
 /*  -webkit-font-smoothing: antialiased;*/
 /*  box-sizing: border-box;*/
 /*}*/
+html {
+  font-size: 62.5%;
+  color: #212121;
+}
 
-/**,*/
-/**::before,*/
-/**::after {*/
-/*  box-sizing: border-box;*/
-/*  margin: 0;*/
-/*}*/
+a {
+  text-decoration: none;
+  color: #212121;
+}
 
-/*.button--green {*/
-/*  display: inline-block;*/
-/*  border-radius: 4px;*/
-/*  border: 1px solid #3b8070;*/
-/*  color: #3b8070;*/
-/*  text-decoration: none;*/
-/*  padding: 10px 30px;*/
-/*}*/
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
 
-/*.button--green:hover {*/
-/*  color: #fff;*/
-/*  background-color: #3b8070;*/
-/*}*/
-
-/*.button--grey {*/
-/*  display: inline-block;*/
-/*  border-radius: 4px;*/
-/*  border: 1px solid #35495e;*/
-/*  color: #35495e;*/
-/*  text-decoration: none;*/
-/*  padding: 10px 30px;*/
-/*  margin-left: 15px;*/
-/*}*/
-
-/*.button--grey:hover {*/
-/*  color: #fff;*/
-/*  background-color: #35495e;*/
-/*}*/
+.main-area {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
 </style>
