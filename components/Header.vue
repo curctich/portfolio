@@ -7,7 +7,7 @@
             <nuxt-link to="/">home</nuxt-link>
           </li>
           <li class="header__nav_item">
-            <nuxt-link to="/">works</nuxt-link>
+            <nuxt-link to="/works">works</nuxt-link>
           </li>
         </ul>
       </nav>
