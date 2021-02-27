@@ -5,7 +5,7 @@
         <h2 class="title--primary">Links</h2>
         <ul class="footer__links">
           <li class="footer__links_item">
-            <a href="#">Github</a>
+            <a href="https://github.com/curctich" target="_blank">Github</a>
           </li>
           <li class="footer__links_item">
             <a href="mailto:sieeya.bp@gmail.com">sieeya.bp@gmail.com</a>
