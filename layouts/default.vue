@@ -1,9 +1,9 @@
 <template>
   <div>
     <Header />
-    <div>
+    <main>
       <Nuxt />
-    </div>
+    </main>
     <Footer />
   </div>
 </template>
@@ -50,7 +50,7 @@ ul {
 
 .inner__main {
   width: 100%;
-  max-width: 960px;
+  max-width: 960px + 30px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -71,5 +71,9 @@ ul {
     margin-top: 10px;
     background-color: #212121;
   }
+}
+
+.text--default {
+  font-size: 1.6rem;
 }
 </style>
