@@ -2,19 +2,15 @@
   <section class="works section__area">
     <div class="inner__main">
       <h2 class="title--primary">Works</h2>
-
-      <ul v-for="worksList in worksLists" v-bind:key="worksList.id" class="works__list">
-        <li class="works__list_unit">
+      <ul class="works__list">
+        <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="works__list_unit">
           <h3 class="works__list_title">
             {{ worksList.name }}
             <span>( {{ worksList.period }} )</span>
           </h3>
-          <div class="works__list_content">
-            <p class="text--default">担当内容</p>
-            <ul>
-              <li v-for="inCharge in worksList.inCharges">{{ inCharge }}</li>
-            </ul>
-          </div>
+          <ul class="works__list_content">
+            <li v-for="inCharge in worksList.inCharges">{{ inCharge }}</li>
+          </ul>
           <ul class="works__list_info">
             <li v-for="category in worksList.categories">{{ category }}</li>
           </ul>
@@ -54,9 +50,20 @@ export default {
 
 <style lang="scss" scoped>
 .works__list_unit {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 30px;
+    background-color: #dadada;
+  }
   &:last-child {
     margin-bottom: 0;
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -68,34 +75,14 @@ export default {
     font-size: 1.2rem;
     font-weight: normal;
   }
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 15px;
-    background-color: #dadada;
-  }
 }
 
 .works__list_content {
   margin-bottom: 20px;
-  p {
-    margin-bottom: 8px;
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      margin-right: 8px;
-      background-color: #212121;
-      vertical-align: middle;
-    }
-  }
-  ul li {
+  li {
     padding-left: 10px;
-    margin-bottom: 5px;
     font-size: 1.4rem;
+    line-height: 1.8;
     &::before {
       content: '';
       display: inline-block;
@@ -114,8 +101,9 @@ export default {
 
 .works__list_info {
   display: flex;
+  flex-wrap: wrap;
   li {
-    margin: 0 5px 0 5px;
+    margin: 0 5px 5px 0;
     padding: 0 5px;
     font-size: 1.2rem;
     background-color: #f2f2f2;
