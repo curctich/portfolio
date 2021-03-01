@@ -3,30 +3,22 @@
     <div class="inner__main">
       <h2 class="title--primary">Works</h2>
 
-      <ul class="works__list">
+      <ul v-for="worksList in worksLists" v-bind:key="worksList.id" class="works__list">
         <li class="works__list_unit">
           <h3 class="works__list_title">
-            外国人就職マッチングアプリ開発
-            <span>( 2019年4月〜2019年11月 )</span>
+            {{ worksList.name }}
+            <span>( {{ worksList.period }} )</span>
           </h3>
           <div class="works__list_content">
             <p class="text--default">担当内容</p>
             <ul>
-              <li>サービスロゴデザイン</li>
-              <li>アプリデザイン</li>
-              <li>サービスのLPサイトデザイン、コーディング</li>
-              <li>WordPressのブランクテーマを使用したテーマ作成</li>
+              <li v-for="inCharge in worksList.inCharges">{{ inCharge }}</li>
             </ul>
           </div>
           <ul class="works__list_info">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>WordPress</li>
-            <li>Vagrant</li>
+            <li v-for="category in worksList.categories">{{ category }}</li>
           </ul>
         </li>
-
       </ul>
     </div>
   </section>
@@ -34,6 +26,29 @@
 
 <script>
 export default {
+  data() {
+    return {
+      worksLists: [
+        {
+          name: '外国人就職マッチングアプリ開発',
+          period: '2019年4月〜2019年11月',
+          inCharges: [
+            'サービスロゴデザイン',
+            'アプリデザイン',
+            'サービスのLPサイトデザイン、コーディング',
+            'WordPressのブランクテーマを使用したテーマ作成'
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'WordPress',
+            'Vagrant'
+          ]
+        }
+      ],
+    }
+  }
 }
 </script>
 
