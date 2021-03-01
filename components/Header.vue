@@ -4,10 +4,10 @@
       <nav>
         <ul class="header__nav">
           <li class="header__nav_item">
-            <nuxt-link to="/">HOME</nuxt-link>
+            <nuxt-link to="/">home</nuxt-link>
           </li>
           <li class="header__nav_item">
-            <nuxt-link to="/">WORKS</nuxt-link>
+            <nuxt-link to="/works">works</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -27,6 +27,7 @@
   padding: 15px;
   font-size: 1.6rem;
   font-weight: bold;
+  text-transform: uppercase;
   transition: all 0.5s;
   &:hover {
     opacity: 0.5;
