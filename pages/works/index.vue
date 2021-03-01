@@ -39,7 +39,58 @@ export default {
             'CSS',
             'JavaScript',
             'WordPress',
-            'Vagrant'
+            'Vagrant',
+            'Photoshop',
+            'Illustrator',
+            'Adobe XD'
+          ]
+        },
+        {
+          name: '不動産系企業のWebサイト制作',
+          period: '2019年12月〜2020年3月',
+          inCharges: [
+            'Webサイトデザイン、コーディング',
+            'WordPressのブランクテーマを使用したテーマ作成',
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'WordPress',
+            'Vagrant',
+            'Photoshop',
+            'Illustrator',
+            'Adobe XD'
+          ]
+        },
+        {
+          name: '教育関連サービスのデザイン',
+          period: '2020年5月',
+          inCharges: [
+            '仕様書を基に、追加開発のデザイン案作成',
+          ],
+          categories: [
+            'Photoshop',
+            'Illustrator',
+            'Adobe XD'
+          ]
+        },
+        {
+          name: '自社サイト リニューアル',
+          period: '2020年6月〜2020年8月',
+          inCharges: [
+            'ロゴデザイン案作成',
+            '名刺デザイン案作成',
+            'Webサイトワイヤーフレーム、デザイン案作成、コーディング'
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'React.js',
+            'Photoshop',
+            'Illustrator',
+            'Adobe XD'
           ]
         }
       ],
