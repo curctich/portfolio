@@ -157,7 +157,7 @@ export default {
     margin: 0 5px 5px 0;
     padding: 0 5px;
     font-size: 1.2rem;
-    background-color: #f2f2f2;
+    background-color: #e2e2e2;
     border-radius: 2px;
     &:last-child {
       margin-right: 0;
