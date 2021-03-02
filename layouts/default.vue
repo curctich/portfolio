@@ -51,7 +51,7 @@ ol {
 
 .inner__main {
   width: 100%;
-  max-width: 960px + 30px;
+  max-width: 748px;
   padding: 0 15px;
   margin: 0 auto;
 }
