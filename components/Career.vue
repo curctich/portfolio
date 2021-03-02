@@ -3,28 +3,9 @@
     <div class="inner__main">
       <h2 class="title--primary">Career</h2>
       <ol class="career__timeline">
-        <li class="career__timeline_unit">
-          <time class="career__timeline_title">2020</time>
-          <p class="career__timeline_text">株式会社CI 退社</p>
-        </li>
-        <li class="career__timeline_unit">
-          <time class="career__timeline_title">2019</time>
-          <p class="career__timeline_text">株式会社CI 入社</p>
-          <p class="career__timeline_text">デジタルハリウッド大阪校 Webデザイナー専攻 修了</p>
-        </li>
-        <li class="career__timeline_unit">
-          <time class="career__timeline_title">2018</time>
-          <p class="career__timeline_text">デジタルハリウッド大阪校 Webデザイナー専攻 入学</p>
-          <p class="career__timeline_text">株式会社Lovin 退社</p>
-        </li>
-        <li class="career__timeline_unit">
-          <time class="career__timeline_title">2012</time>
-          <p class="career__timeline_text">株式会社Lovin 入社</p>
-          <p class="career__timeline_text">株式会社ミスティー・コレクション 退社</p>
-        </li>
-        <li class="career__timeline_unit">
-          <time class="career__timeline_title">2010</time>
-          <p class="career__timeline_text">株式会社ミスティー・コレクション 入社</p>
+        <li v-for="careerTimeline in careerTimelines" v-bind:key="careerTimeline.id" class="career__timeline_unit">
+          <time class="career__timeline_title">{{ careerTimeline.year }}</time>
+          <p v-for="careerTimelineText in careerTimeline.careerTimelineTexts" class="career__timeline_text">{{ careerTimelineText }}</p>
         </li>
       </ol>
     </div>
@@ -32,6 +13,47 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      careerTimelines: [
+        {
+          year: '2020',
+          careerTimelineTexts: [
+            '株式会社CI 退社'
+          ]
+        },
+        {
+          year: '2019',
+          careerTimelineTexts: [
+            '株式会社CI 入社',
+            'デジタルハリウッド大阪校 Webデザイナー専攻 修了'
+          ]
+        },
+        {
+          year: '2018',
+          careerTimelineTexts: [
+            'デジタルハリウッド大阪校 Webデザイナー専攻 入学',
+            '株式会社Lovin 退社'
+          ]
+        },
+        {
+          year: '2012',
+          careerTimelineTexts: [
+            '株式会社Lovin 入社',
+            '株式会社ミスティー・コレクション 退社'
+          ]
+        },
+        {
+          year: '2010',
+          careerTimelineTexts: [
+            '株式会社ミスティー・コレクション 入社'
+          ]
+        },
+      ]
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -41,12 +63,6 @@
   position: relative;
   padding-left: 20px;
   margin-bottom: 30px;
-  &:last-child {
-    margin-bottom: 0;
-    &::after {
-      display: none;
-    }
-  }
   &::before {
     content: '';
     top: 6px;
