@@ -42,7 +42,8 @@ a {
   color: #212121;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
   list-style: none;
