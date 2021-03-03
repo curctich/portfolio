@@ -2,10 +2,12 @@
   <section class="career section__area">
     <div class="inner__main">
       <h2 class="title--primary">Career</h2>
-      <ol class="career__timeline">
-        <li v-for="careerTimeline in careerTimelines" v-bind:key="careerTimeline.id" class="career__timeline_unit">
-          <time class="career__timeline_title">{{ careerTimeline.year }}</time>
-          <p v-for="careerTimelineText in careerTimeline.careerTimelineTexts" class="career__timeline_text">{{ careerTimelineText }}</p>
+      <ol class="timeline">
+        <li v-for="careerTimeline in careerTimelines" v-bind:key="careerTimeline.id" class="timeline__unit">
+          <time class="timeline__title">{{ careerTimeline.year }}</time>
+          <div class="timeline__content">
+            <p v-for="careerTimelineText in careerTimeline.careerTimelineTexts" class="timeline__content_text">{{ careerTimelineText }}</p>
+          </div>
         </li>
       </ol>
     </div>
@@ -57,43 +59,64 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.career__timeline {}
+.career .timeline {}
 
-.career__timeline_unit {
+.career .timeline__unit {
   position: relative;
-  padding-left: 20px;
-  margin-bottom: 30px;
+  padding: 0 0 20px 20px;
   &::before {
     content: '';
+    position: absolute;
     top: 6px;
     left: 0;
-    position: absolute;
+    z-index: 2;
     display: inline-block;
     width: 10px;
     height: 10px;
     border: 2px solid #212121;
-    background-color: transparent;
+    border-radius: 50%;
+    background-color: #fff;
   }
   &::after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 4px;
     display: inline-block;
     width: 1px;
     height: 100%;
-    margin-top: 24px;
     border: 1px solid #ebebeb;
+  }
+  &:last-child {
+    &::after {
+      display: none;
+    }
+    .timeline__content {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
-.career__timeline_title {
+.career .timeline__title {
   display: inline-block;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 15px;
   font-size: 1.6rem;
 }
+.career .timeline__content {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    border-bottom: 2px dotted #ebebeb;
+  }
+}
 
-.career__timeline_text {
+.career .timeline__content_text {
   font-size: 1.4rem;
   line-height: 1.8;
 }
