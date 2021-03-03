@@ -37,6 +37,10 @@ html {
   color: #212121;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 a {
   text-decoration: none;
   color: #212121;
