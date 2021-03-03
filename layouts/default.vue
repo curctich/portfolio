@@ -65,6 +65,7 @@ ol {
   font-size: 2.4rem;
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   &::after {
     content: '';
     display: block;
