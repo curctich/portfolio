@@ -61,15 +61,16 @@ ol {
 }
 
 .title--primary {
+  margin-bottom: 40px;
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  text-align: center;
   &::after {
     content: '';
     display: block;
     width: 32px;
     height: 4px;
-    margin-top: 10px;
+    margin: 10px auto 0;
     background-color: #212121;
   }
 }
