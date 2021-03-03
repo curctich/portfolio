@@ -2,17 +2,17 @@
   <section class="works section__area">
     <div class="inner__main">
       <h2 class="title--primary">Works</h2>
-      <ul class="works__list">
-        <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="works__list_unit">
-          <h3 class="works__list_title">
+      <ul class="worksList">
+        <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__unit">
+          <h3 class="worksList__title">
             {{ worksList.name }}
             <span>( {{ worksList.period }} )</span>
           </h3>
-          <ul class="works__list_content">
-            <li v-for="inCharge in worksList.inCharges">{{ inCharge }}</li>
+          <ul class="worksList__content">
+            <li v-for="inCharge in worksList.inCharges" class="worksList__content_text">{{ inCharge }}</li>
           </ul>
-          <ul class="works__list_info">
-            <li v-for="category in worksList.categories">{{ category }}</li>
+          <ul class="worksList__info">
+            <li v-for="category in worksList.categories" class="worksList__info_text">{{ category }}</li>
           </ul>
         </li>
       </ul>
@@ -100,7 +100,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.works__list_unit {
+.works .worksList {}
+
+.works .worksList__unit {
   margin-bottom: 30px;
   &::after {
     content: '';
@@ -118,7 +120,7 @@ export default {
   }
 }
 
-.works__list_title {
+.works .worksList__title {
   margin-bottom: 15px;
   font-size: 1.6rem;
   span {
@@ -128,9 +130,9 @@ export default {
   }
 }
 
-.works__list_content {
+.works .worksList__content {
   margin-bottom: 20px;
-  li {
+  .worksList__content_text {
     padding-left: 10px;
     font-size: 1.4rem;
     line-height: 1.8;
@@ -150,10 +152,10 @@ export default {
   }
 }
 
-.works__list_info {
+.works .worksList__info {
   display: flex;
   flex-wrap: wrap;
-  li {
+  .worksList__info_text {
     margin: 0 5px 5px 0;
     padding: 0 5px;
     font-size: 1.2rem;
