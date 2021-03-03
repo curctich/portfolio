@@ -20,8 +20,11 @@
 footer {
   background-color: #212121;
   .title--primary {
+    text-align: left;
     color: #fafafa;
     &::after {
+      margin-top: 10px;
+      margin-left: 0;
       background-color: #fafafa;
     }
   }

@@ -16,13 +16,6 @@
 </script>
 
 <style lang="scss" scoped>
-.profile .title--primary {
-  text-align: center;
-  &:after {
-    margin: 10px auto 0;
-  }
-}
-
 .profile .textarea {
   .text--default {
     margin-bottom: 30px;
