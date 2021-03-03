@@ -42,7 +42,8 @@ a {
   color: #212121;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -50,7 +51,7 @@ ul {
 
 .inner__main {
   width: 100%;
-  max-width: 960px + 30px;
+  max-width: 748px;
   padding: 0 15px;
   margin: 0 auto;
 }

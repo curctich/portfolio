@@ -2,7 +2,7 @@
   <section class="profile section__area">
     <div class="inner__main">
       <h2 class="title--primary">Profile</h2>
-      <div class="text__area">
+      <div class="textarea">
         <p class="text--default">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
         <p class="text--default">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
         <p class="text--default">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。</p>
@@ -16,16 +16,14 @@
 </script>
 
 <style lang="scss" scoped>
-.profile {
-  .title--primary {
-    text-align: center;
-    &:after {
-      margin: 10px auto 0;
-    }
+.profile .title--primary {
+  text-align: center;
+  &:after {
+    margin: 10px auto 0;
   }
 }
 
-.text__area {
+.profile .textarea {
   .text--default {
     margin-bottom: 30px;
     &:last-child {
