@@ -1,7 +1,7 @@
 <template>
   <section class="career section__area">
     <div class="inner__main">
-      <h2 class="title--primary">Career</h2>
+      <h2 class="title--primary text--en">Career</h2>
       <ol class="timeline">
         <li v-for="careerTimeline in careerTimelines" v-bind:key="careerTimeline.id" class="timeline__unit">
           <time class="timeline__title">{{ careerTimeline.year }}</time>
@@ -104,6 +104,7 @@ export default {
   width: 100%;
   margin-bottom: 15px;
   font-size: 1.6rem;
+  font-weight: 500;
 }
 .career .timeline__content {
   &::after {

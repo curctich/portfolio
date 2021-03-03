@@ -1,7 +1,7 @@
 <template>
   <div class="mv">
     <div class="mv__title_wrapper">
-      <h1 class="mv__title">portfolio<span>Saori Yajima</span></h1>
+      <h1 class="mv__title text--en">portfolio<span>Saori Yajima</span></h1>
     </div>
   </div>
 </template>
@@ -35,6 +35,7 @@
     margin-top: 15px;
     font-size: 1.8rem;
     text-transform: none;
+    color: #bababa;
   }
   &::before,
   &::after {

@@ -3,10 +3,10 @@
     <div class="inner__main header__wrapper">
       <nav>
         <ul class="header__nav">
-          <li class="header__nav_item">
+          <li class="header__nav_item text--en">
             <nuxt-link to="/">home</nuxt-link>
           </li>
-          <li class="header__nav_item">
+          <li class="header__nav_item text--en">
             <nuxt-link to="/works">works</nuxt-link>
           </li>
         </ul>
@@ -26,7 +26,7 @@
 .header__nav_item {
   padding: 15px;
   font-size: 1.6rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   transition: all 0.5s;
   &:hover {

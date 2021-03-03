@@ -1,7 +1,7 @@
 <template>
   <section class="works section__area">
     <div class="inner__main">
-      <h2 class="title--primary">Works</h2>
+      <h2 class="title--primary text--en">Works</h2>
       <ul class="worksList">
         <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__unit">
           <h3 class="worksList__title">
@@ -123,10 +123,11 @@ export default {
 .works .worksList__title {
   margin-bottom: 15px;
   font-size: 1.6rem;
+  font-weight: 500;
   span {
     display: block;
     font-size: 1.2rem;
-    font-weight: normal;
+    font-weight: 300;
   }
 }
 
