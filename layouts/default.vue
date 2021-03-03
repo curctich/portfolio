@@ -19,30 +19,20 @@ export default {
 </script>
 
 <style lang="scss">
-/*html {*/
-/*  font-family:*/
-/*    'Source Sans Pro',*/
-/*    -apple-system,*/
-/*    BlinkMacSystemFont,*/
-/*    'Segoe UI',*/
-/*    Roboto,*/
-/*    'Helvetica Neue',*/
-/*    Arial,*/
-/*    sans-serif;*/
-/*  font-size: 16px;*/
-/*  word-spacing: 1px;*/
-/*  -ms-text-size-adjust: 100%;*/
-/*  -webkit-text-size-adjust: 100%;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  box-sizing: border-box;*/
-/*}*/
 html {
   font-size: 62.5%;
-  color: #212121;
+  visibility: hidden;
+}
+
+html.wf-active {
+  visibility: visible;
 }
 
 body {
+  font-family: source-han-sans-cjk-ja,"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #212121;
   background-color: #fafafa;
 }
 
@@ -69,10 +59,18 @@ ol {
   padding: 60px 0;
 }
 
+.text--en {
+  font-family: sofia-pro, sans-serif;
+}
+
+.text--default {
+  font-size: 1.6rem;
+}
+
 .title--primary {
   margin-bottom: 40px;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   &::after {
@@ -83,9 +81,5 @@ ol {
     margin: 10px auto 0;
     background-color: #212121;
   }
-}
-
-.text--default {
-  font-size: 1.6rem;
 }
 </style>
