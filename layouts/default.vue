@@ -9,8 +9,13 @@
 </template>
 
 <script>
-// export default {
-// }
+export default {
+  mounted() {
+    this.$nextTick(function () {
+      this.$adobeFonts(document)
+    })
+  },
+}
 </script>
 
 <style lang="scss">
