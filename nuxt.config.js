@@ -39,6 +39,7 @@ export default {
   styleResources: {
     scss: [
       '~/assets/scss/break-point.scss',
+      '~/assets/scss/color.scss',
     ]
   },
 

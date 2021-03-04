@@ -15,6 +15,9 @@
   position: relative;
   width: 100%;
   height: 500px;
+  @include mq('sm') {
+    height: 300px;
+  }
 }
 .mv .mv__title_wrapper {
   display: flex;
@@ -26,16 +29,24 @@
 
 .mv .mv__title {
   position: relative;
-  padding: 6%;
+  padding: 8%;
   font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
+  @include mq('sm') {
+    font-size: 4rem;
+    padding: 15%;
+  }
   span {
     display: block;
     margin-top: 15px;
     font-size: 1.8rem;
     text-transform: none;
-    color: #bababa;
+    color: $text--gray;
+    @include mq('sm') {
+      margin-top: 5px;
+      font-size: 1.6rem;
+    }
   }
   &::before,
   &::after {
@@ -48,14 +59,14 @@
   &::before {
     top: 0;
     left: 0;
-    border-left: 2px solid #212121;
-    border-top: 2px solid #212121;
+    border-left: 2px solid $border--black;
+    border-top: 2px solid $border--black;
   }
   &::after {
     bottom: 0;
     right: 0;
-    border-right: 2px solid #212121;
-    border-bottom: 2px solid #212121;
+    border-right: 2px solid $border--black;
+    border-bottom: 2px solid $border--black;
   }
 }
 

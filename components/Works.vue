@@ -110,7 +110,7 @@ export default {
     width: 100%;
     height: 1px;
     margin-top: 30px;
-    background-color: #dadada;
+    background-color: $border--gray;
   }
   &:last-child {
     margin-bottom: 0;
@@ -136,14 +136,13 @@ export default {
   .worksList__content_text {
     padding-left: 10px;
     font-size: 1.4rem;
-    line-height: 1.8;
     &::before {
       content: '';
       display: inline-block;
       width: 5px;
       height: 5px;
       margin-right: 8px;
-      border: 1px solid #212121;
+      border: 1px solid $border--black;
       background-color: transparent;
       vertical-align: middle;
     }
@@ -160,7 +159,7 @@ export default {
     margin: 0 5px 5px 0;
     padding: 0 5px;
     font-size: 1.2rem;
-    background-color: #e2e2e2;
+    background-color: $tag--gray;
     border-radius: 2px;
     &:last-child {
       margin-right: 0;

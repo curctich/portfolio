@@ -18,14 +18,14 @@
 
 <style lang="scss" scoped>
 footer {
-  background-color: #212121;
+  background-color: $bg--black;
   .title--primary {
     text-align: left;
-    color: #fafafa;
+    color: $text--white;
     &::after {
       margin-top: 10px;
       margin-left: 0;
-      background-color: #fafafa;
+      background-color: $text--white;
     }
   }
 }
@@ -38,12 +38,12 @@ footer {
   font-size: 1.6rem;
   transition: all 0.5s;
   a {
-    color: #fafafa;
+    color: $text--white;
   }
   &::after {
     content: '・';
     padding: 0 10px;
-    color: #fafafa;
+    color: $text--white;
   }
   &:last-child {
     &::after {

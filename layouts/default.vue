@@ -32,13 +32,14 @@ body {
   font-family: source-han-sans-cjk-ja,"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-style: normal;
   font-weight: 300;
-  color: #212121;
-  background-color: #fafafa;
+  color: $text--main;
+  line-height: 1.8;
+  background-color: $bg--white;
 }
 
 a {
   text-decoration: none;
-  color: #212121;
+  color: $text--main;
 }
 
 ul,
@@ -57,6 +58,9 @@ ol {
 
 .section__area {
   padding: 60px 0;
+  @include mq() {
+    padding: 40px 0;
+  }
 }
 
 .text--en {
@@ -65,21 +69,29 @@ ol {
 
 .text--default {
   font-size: 1.6rem;
+  text-align: justify;
+  @include mq() {
+    font-size: 1.4rem;
+  }
 }
 
 .title--primary {
   margin-bottom: 40px;
-  font-size: 2.4rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  @include mq() {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+  }
   &::after {
     content: '';
     display: block;
     width: 32px;
     height: 4px;
     margin: 10px auto 0;
-    background-color: #212121;
+    background-color: $text--main;
   }
 }
 </style>
