@@ -64,28 +64,27 @@ export default {
 .career .timeline__unit {
   position: relative;
   padding: 0 0 20px 20px;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 0;
-    z-index: 2;
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #212121;
-    border-radius: 50%;
-    background-color: #fff;
-  }
+  &::before,
   &::after {
     content: '';
     position: absolute;
-    top: 6px;
-    left: 4px;
+    top: 8px;
     display: inline-block;
+  }
+  &::before {
+    left: 0;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    border: 2px solid $border--black;
+    border-radius: 50%;
+    background-color: $bg--white;
+  }
+  &::after {
+    left: 4px;
     width: 1px;
     height: 100%;
-    border: 1px solid #ebebeb;
+    border: 1px solid $border--gray;
   }
   &:last-child {
     &::after {
@@ -113,12 +112,11 @@ export default {
     width: 100%;
     height: 100%;
     margin-top: 30px;
-    border-bottom: 2px dotted #ebebeb;
+    border-bottom: 2px dotted $border--lightgray;
   }
 }
 
 .career .timeline__content_text {
   font-size: 1.4rem;
-  line-height: 1.8;
 }
 </style>

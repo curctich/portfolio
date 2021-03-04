@@ -35,7 +35,7 @@
     margin-top: 15px;
     font-size: 1.8rem;
     text-transform: none;
-    color: #bababa;
+    color: $text--gray;
   }
   &::before,
   &::after {
@@ -48,14 +48,14 @@
   &::before {
     top: 0;
     left: 0;
-    border-left: 2px solid #212121;
-    border-top: 2px solid #212121;
+    border-left: 2px solid $border--black;
+    border-top: 2px solid $border--black;
   }
   &::after {
     bottom: 0;
     right: 0;
-    border-right: 2px solid #212121;
-    border-bottom: 2px solid #212121;
+    border-right: 2px solid $border--black;
+    border-bottom: 2px solid $border--black;
   }
 }
 
