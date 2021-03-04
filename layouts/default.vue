@@ -58,6 +58,9 @@ ol {
 
 .section__area {
   padding: 60px 0;
+  @include mq() {
+    padding: 40px 0;
+  }
 }
 
 .text--en {
@@ -66,6 +69,10 @@ ol {
 
 .text--default {
   font-size: 1.6rem;
+  text-align: justify;
+  @include mq() {
+    font-size: 1.4rem;
+  }
 }
 
 .title--primary {
@@ -74,6 +81,10 @@ ol {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  @include mq() {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+  }
   &::after {
     content: '';
     display: block;
