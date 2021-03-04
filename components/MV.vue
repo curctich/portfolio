@@ -15,6 +15,9 @@
   position: relative;
   width: 100%;
   height: 500px;
+  @include mq('sm') {
+    height: 300px;
+  }
 }
 .mv .mv__title_wrapper {
   display: flex;
@@ -26,16 +29,24 @@
 
 .mv .mv__title {
   position: relative;
-  padding: 6%;
+  padding: 8%;
   font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
+  @include mq('sm') {
+    font-size: 4rem;
+    padding: 15%;
+  }
   span {
     display: block;
     margin-top: 15px;
     font-size: 1.8rem;
     text-transform: none;
     color: $text--gray;
+    @include mq('sm') {
+      margin-top: 5px;
+      font-size: 1.6rem;
+    }
   }
   &::before,
   &::after {
