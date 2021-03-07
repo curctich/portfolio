@@ -1,2 +1,4 @@
-# portfolio
+# Portfolio
 ポートフォリオサイトです。
+
+https://curctich.netlify.app/
