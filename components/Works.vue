@@ -4,9 +4,6 @@
       <h2 class="title--primary text--en">Works</h2>
       <ul class="worksList">
         <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__content">
-          <div class="worksList__img">
-            <img src="~/assets/img/noimage.png" alt="画像">
-          </div>
           <div class="worksList__info">
             <h3 class="worksList__title">
               {{ worksList.name }}
@@ -31,38 +28,18 @@ export default {
     return {
       worksLists: [
         {
-          name: '外国人就職マッチングアプリ開発',
-          period: '2019年4月〜2019年11月',
+          name: '自社(株式会社CI)コーポレートサイト リニューアル',
+          period: '2020年6月〜2020年8月',
           inCharges: [
-            'サービスロゴデザイン',
-            'アプリデザイン',
-            'サービスのLPサイトデザイン、コーディング',
-            'WordPressのブランクテーマを使用したテーマ作成'
+            'ロゴデザイン案作成',
+            '名刺デザイン案作成',
+            'Webサイトワイヤーフレーム、デザイン案作成、コーディング'
           ],
           categories: [
             'HTML',
             'CSS',
             'JavaScript',
-            'WordPress',
-            'Vagrant',
-            'Photoshop',
-            'Illustrator',
-            'Adobe XD'
-          ]
-        },
-        {
-          name: '不動産系企業のWebサイト制作',
-          period: '2019年12月〜2020年3月',
-          inCharges: [
-            'Webサイトデザイン、コーディング',
-            'WordPressのブランクテーマを使用したテーマ作成',
-          ],
-          categories: [
-            'HTML',
-            'CSS',
-            'JavaScript',
-            'WordPress',
-            'Vagrant',
+            'React.js',
             'Photoshop',
             'Illustrator',
             'Adobe XD'
@@ -81,23 +58,43 @@ export default {
           ]
         },
         {
-          name: '自社コーポレートサイト リニューアル',
-          period: '2020年6月〜2020年8月',
+          name: '不動産系企業のWebサイト制作',
+          period: '2019年12月〜2020年3月',
           inCharges: [
-            'ロゴデザイン案作成',
-            '名刺デザイン案作成',
-            'Webサイトワイヤーフレーム、デザイン案作成、コーディング'
+            'Webサイトデザイン、コーディング',
+            'WordPressのブランクテーマ(Underscores)を使用したテーマ作成',
           ],
           categories: [
             'HTML',
             'CSS',
             'JavaScript',
-            'React.js',
+            'WordPress',
+            'Vagrant',
             'Photoshop',
             'Illustrator',
             'Adobe XD'
           ]
-        }
+        },
+        {
+          name: '外国人就職マッチングアプリ開発',
+          period: '2019年4月〜2019年11月',
+          inCharges: [
+            'サービスロゴデザイン',
+            'アプリデザイン',
+            'サービスのLPサイトデザイン、コーディング',
+            'WordPressのブランクテーマ(Underscores)を使用したテーマ作成'
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'WordPress',
+            'Vagrant',
+            'Photoshop',
+            'Illustrator',
+            'Adobe XD'
+          ]
+        },
       ],
     }
   }
@@ -118,19 +115,6 @@ export default {
     margin-bottom: 0;
     border-bottom: none;
   }
-}
-
-.works .worksList__img {
-  width: 40%;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.works .worksList__info {
-  width: 60%;
-  padding-left: 20px;
 }
 
 .works .worksList__title {
