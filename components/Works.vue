@@ -26,6 +26,17 @@ export default {
     return {
       worksLists: [
         {
+
+          name: '自社サービス開発',
+          period: '2020年7月〜2020年8月',
+          inCharges: [
+            'サービスのモックアップ作成'
+          ],
+          categories: [
+            'Adobe XD'
+          ]
+        },
+        {
           name: '自社(株式会社CI)コーポレートサイト リニューアル',
           period: '2020年6月〜2020年8月',
           inCharges: [
@@ -71,6 +82,37 @@ export default {
             'Photoshop',
             'Illustrator',
             'Adobe XD'
+          ]
+        },
+        {
+          name: 'Webサイト制作',
+          period: '2019年12月〜2020年2月',
+          inCharges: [
+            'コーディング',
+            'WordPressのブランクテーマ(Underscores)を使用したテーマ作成',
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'WordPress',
+            'Vagrant',
+            'Photoshop'
+          ]
+        },
+        {
+          name: 'LPサイト制作',
+          period: '2019年11月〜2020年12月',
+          inCharges: [
+            'LPサイトデザイン、コーディング',
+          ],
+          categories: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'WordPress',
+            'Vagrant',
+            'Photoshop',
           ]
         },
         {
