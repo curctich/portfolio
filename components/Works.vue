@@ -3,17 +3,22 @@
     <div class="inner__main">
       <h2 class="title--primary text--en">Works</h2>
       <ul class="worksList">
-        <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__unit">
-          <h3 class="worksList__title">
-            {{ worksList.name }}
-            <span>( {{ worksList.period }} )</span>
-          </h3>
-          <ul class="worksList__content">
-            <li v-for="inCharge in worksList.inCharges" class="worksList__content_text">{{ inCharge }}</li>
-          </ul>
-          <ul class="worksList__info">
-            <li v-for="category in worksList.categories" class="worksList__info_text">{{ category }}</li>
-          </ul>
+        <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__content">
+          <div class="worksList__img">
+            <img src="~/assets/img/noimage.png" alt="画像">
+          </div>
+          <div class="worksList__info">
+            <h3 class="worksList__title">
+              {{ worksList.name }}
+              <span>( {{ worksList.period }} )</span>
+            </h3>
+            <ul class="worksList__incharge">
+              <li v-for="inCharge in worksList.inCharges" class="worksList__incharge_text">{{ inCharge }}</li>
+            </ul>
+            <ul class="worksList__category">
+              <li v-for="category in worksList.categories" class="worksList__category_text">{{ category }}</li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -102,22 +107,30 @@ export default {
 <style lang="scss" scoped>
 .works .worksList {}
 
-.works .worksList__unit {
+.works .worksList__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
   margin-bottom: 30px;
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 30px;
-    background-color: $border--gray;
-  }
+  border-bottom: 1px solid $border--gray;
   &:last-child {
     margin-bottom: 0;
-    &::after {
-      display: none;
-    }
+    border-bottom: none;
   }
+}
+
+.works .worksList__img {
+  width: 40%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.works .worksList__info {
+  width: 60%;
+  padding-left: 20px;
 }
 
 .works .worksList__title {
@@ -131,9 +144,9 @@ export default {
   }
 }
 
-.works .worksList__content {
+.works .worksList__incharge {
   margin-bottom: 20px;
-  .worksList__content_text {
+  .worksList__incharge_text {
     padding-left: 10px;
     font-size: 1.4rem;
     &::before {
@@ -152,10 +165,10 @@ export default {
   }
 }
 
-.works .worksList__info {
+.works .worksList__category {
   display: flex;
   flex-wrap: wrap;
-  .worksList__info_text {
+  .worksList__category_text {
     margin: 0 5px 5px 0;
     padding: 0 5px;
     font-size: 1.2rem;
