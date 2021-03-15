@@ -5,10 +5,8 @@
       <ul class="worksList">
         <li v-for="worksList in worksLists" v-bind:key="worksList.id" class="worksList__content">
           <div class="worksList__info">
-            <h3 class="worksList__title">
-              {{ worksList.name }}
-              <span>( {{ worksList.period }} )</span>
-            </h3>
+            <h3 class="worksList__title">{{ worksList.name }}</h3>
+            <p class="worksList__period">( {{ worksList.period }} )</p>
             <ul class="worksList__incharge">
               <li v-for="inCharge in worksList.inCharges" class="worksList__incharge_text">{{ inCharge }}</li>
             </ul>
@@ -118,14 +116,14 @@ export default {
 }
 
 .works .worksList__title {
-  margin-bottom: 15px;
   font-size: 1.6rem;
   font-weight: 500;
-  span {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
+}
+
+.works .worksList__period {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .works .worksList__incharge {
