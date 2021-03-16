@@ -48,7 +48,7 @@ export default {
             'HTML',
             'CSS',
             'JavaScript',
-            'React.js',
+            'React',
             'Photoshop',
             'Illustrator',
             'Adobe XD'
